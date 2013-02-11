@@ -1,6 +1,7 @@
 h1.site-title {
 	@include adjust-font-size-to(72px);
 	float: left;
+	position: relative;
 	z-index: 2;
 }
 
