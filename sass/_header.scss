@@ -1,0 +1,39 @@
+h1.site-title {
+	@include adjust-font-size-to(72px);
+	float: left;
+	z-index: 2;
+}
+
+h2.site-description {
+	text-indent: -999em;
+	background-image: url(../img/desc.png);
+	float: left;
+	margin-top: -46px;
+	margin-left: -10px;
+	width: 120px;
+	height: 120px;
+}
+
+.home {
+	h1.site-title {
+		@include animate(fadeIn);
+	}
+	h2.site-description {
+		@include animate(bounceInDown, 1s, 1s);
+	}
+}
+
+nav.main-navigation {
+	clear: both;
+	ul {
+		li {
+			float: left;
+			margin-right: 2em;
+			&.current-menu-item {
+				a {
+					font-weight: bold;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,15 @@
+body {
+	width: 940px;
+	margin: 0 auto;
+	padding-top: 100px;
+}
+
+@import "content-sidebar";
+
+#main {
+	margin-top: 60px;
+}
+
+#nav-above {
+	display: none;
+}
