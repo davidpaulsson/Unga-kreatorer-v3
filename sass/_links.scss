@@ -10,6 +10,14 @@ a {
 	
 }
 
+article {
+	h1.entry-title {
+		a {
+			background-color: transparent;
+		}
+	}
+}
+
 #masthead {
 	a {
 		background-color: transparent;

@@ -66,6 +66,7 @@ article {
 
 }
 .blog article,
+.archive article,
 .single article {
 	@include trailing-border();
 	border-color: $grayLighter;

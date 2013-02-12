@@ -51,10 +51,12 @@
 			<?php endif; // End if $tags_list ?>
 		<?php endif; // End if 'post' == get_post_type() ?>
 
-		<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
+		<?php // if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
+		<!--
 		<span class="sep"> | </span>
-		<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'uk3' ), __( '1 Comment', 'uk3' ), __( '% Comments', 'uk3' ) ); ?></span>
-		<?php endif; ?>
+		<span class="comments-link"><?php // comments_popup_link( __( 'Leave a comment', 'uk3' ), __( '1 Comment', 'uk3' ), __( '% Comments', 'uk3' ) ); ?></span>
+		-->
+		<?php // endif; ?>
 
 		<?php edit_post_link( __( 'Edit', 'uk3' ), '<span class="sep"> | </span><span class="edit-link">', '</span>' ); ?>
 	</footer><!-- .entry-meta -->
