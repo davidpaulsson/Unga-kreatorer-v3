@@ -134,7 +134,7 @@ function uk3_scripts() {
 
 	// CSS
 	wp_enqueue_style( 'style', get_template_directory_uri() . '/css/screen.css', array(), '201302', 'screen' );
-	wp_enqueue_style( 'printstyle', get_template_directory_uri() . '/css/print.css', array(), '201302', 'print' );
+	// wp_enqueue_style( 'printstyle', get_template_directory_uri() . '/css/print.css', array(), '201302', 'print' );
 
 	// JS
 	wp_enqueue_script( 'uk-js', get_template_directory_uri() . '/js/scripts.min.js', array(), '201302', true );

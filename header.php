@@ -25,10 +25,6 @@
 
 <?php wp_head(); ?>
 
-<!--[if IE]>
-<link href="<?php echo get_template_directory_uri(); ?>/css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
-<![endif]-->
-
 </head>
 
 <body <?php body_class(); ?>>

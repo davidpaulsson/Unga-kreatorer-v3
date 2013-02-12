@@ -1,6 +1,8 @@
 h1.site-title {
-	@include adjust-font-size-to(72px);
+	@include adjust-font-size-to(96px);
 	float: left;
+	display: inline-block;
+	width: 100%;
 	position: relative;
 	z-index: 2;
 }
@@ -8,11 +10,22 @@ h1.site-title {
 h2.site-description {
 	text-indent: -999em;
 	background-image: url(../img/desc.png);
-	float: left;
-	margin-top: -46px;
-	margin-left: -10px;
+	float: right;
+	display: inline-block;
 	width: 120px;
 	height: 120px;
+	margin-top: -4.5em;
+	margin-right: 20%;
+	@media all and (-webkit-min-device-pixel-ratio : 1.5) {
+		background-image: url(../img/desc@2x.png);
+	}
+	
+	@include breakpoint(baby-bear) {
+		margin-top: -2em;
+		margin-right:0;
+	}
+	
+	
 }
 
 .home {
@@ -26,15 +39,26 @@ h2.site-description {
 
 nav.main-navigation {
 	clear: both;
+	font-family: "ff-dagny-web-pro", sans-serif;
+	text-transform: uppercase;
 	ul {
 		li {
+			a {
+				color: $grayLighter;
+			}
 			float: left;
 			margin-right: 2em;
-			&.current-menu-item {
+			&.current-menu-item,
+			&.current_page_parent {
 				a {
 					font-weight: bold;
+					color: $gray;
 				}
 			}
-		}
+			@include breakpoint(baby-bear) {
+				display: block;
+				width: 100%;
+			}
+		}		
 	}
 }

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Underscores Svenska\n"
-"POT-Creation-Date: 2013-01-29 10:14+0100\n"
-"PO-Revision-Date: 2013-01-29 10:15+0100\n"
+"POT-Creation-Date: 2013-02-12 14:15+0100\n"
+"PO-Revision-Date: 2013-02-12 14:15+0100\n"
 "Last-Translator: David Paulsson <david@davidpaulsson.se>\n"
 "Language-Team: \n"
 "Language: Swedish\n"
@@ -17,7 +17,8 @@ msgstr ""
 "X-Poedit-SearchPath-0: ..\n"
 
 #: ../404.php:16
-msgid "Oops! That page can&rsquo;t be found."
+#, fuzzy
+msgid "Oops! That page can&apos;t be found."
 msgstr "Whops! Sidan kan inte hittas."
 
 #: ../404.php:20
@@ -150,7 +151,7 @@ msgstr "Läs mer <span class=\"meta-nav\">&rarr;</span>"
 #: ../content.php:38
 #, php-format
 msgid "Posted in %1$s"
-msgstr "Posted in %1$s"
+msgstr "Skrevs i %1$s"
 
 #: ../content.php:49
 #, php-format
@@ -179,11 +180,11 @@ msgstr "Drivs stolt av %s"
 msgid "Theme: %1$s by %2$s."
 msgstr "Tema: %1$s av %2$s."
 
-#: ../functions.php:71
+#: ../functions.php:76
 msgid "Primary Menu"
 msgstr "Primär meny"
 
-#: ../functions.php:89
+#: ../functions.php:125
 msgid "Sidebar"
 msgstr "Sidebar"
 

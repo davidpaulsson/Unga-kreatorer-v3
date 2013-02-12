@@ -1,13 +1,17 @@
 a {
 	text-decoration: none;
 	color: $grayDark;
+	background-color: $yellow;
 	
 	&:hover {
 		color: $gray;
+		background-color: transparent;
 	}
+	
 }
-.entry-content {
+
+#masthead {
 	a {
-		font-weight: bold;
+		background-color: transparent;
 	}
 }
