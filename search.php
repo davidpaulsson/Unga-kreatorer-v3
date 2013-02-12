@@ -14,7 +14,8 @@ get_header(); ?>
 			<?php if ( have_posts() ) : ?>
 
 				<header class="page-header">
-					<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'uk3' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+					<h3 class="page-title"><?php printf( __( 'Search Results for: %s', 'uk3' ), '<span>' . get_search_query() . '</span>' ); ?></h3>
+					<hr />
 				</header><!-- .page-header -->
 
 				<?php uk3_content_nav( 'nav-above' ); ?>
