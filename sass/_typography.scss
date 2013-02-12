@@ -1,59 +1,51 @@
 @include establish-baseline;
 
-$base-font-size:		14px;
-$base-line-height: 		22px;
-
-$gray:					#414141;
-$grayDark:				darken($gray, 20%);
-$yellow:				#f9ff65;
-
 html { 
 	font-family: "proxima-nova",sans-serif;
 	color: $gray;
 }
 
-@mixin bebas {
-	font-family: "bebas-neue",sans-serif;
-	font-style: normal;
-	font-weight: 400;
-	color: $grayDark;
-}
-
 #{headings()} {
-	font-weight: 400;
+	font-weight: bold;
 	color: #333;
 }
 
 h1 {
-	@include adjust-font-size-to(24px);
+	@include adjust-font-size-to($h1-font-size);
 	@include adjust-leading-to(1/2);
-	@include bebas;
 	
+	&.site-title {
+		@include bebas;
+	}
 }
 h2 {
-	@include adjust-font-size-to(20px);
-	@include bebas;
+	@include adjust-font-size-to($h2-font-size);
 }
 h3 {
-	@include adjust-font-size-to(16px);
-	@include bebas;
+	@include adjust-font-size-to($h3-font-size);
 }
 
 #{headings(4,6)} {
-	@include adjust-font-size-to(14px);
+	@include adjust-font-size-to($base-font-size);
 	font-weight: bold;
 }
 
 article {
-
-	@include trailer();
-	@include apply-side-rhythm-border(bottom);
-
-	.entry-content { 
-		@include leader();
+	.entry-meta {
+		@include adjust-font-size-to($small-font-size);
+		color: $grayLight;
+		a {
+			color: $grayLight;
+		}
 	}
 }
 
 #secondary {
-	@include adjust-font-size-to(12px);
+	@include adjust-font-size-to($small-font-size);
+	h1 {
+		@include adjust-font-size-to($h2-font-size);
+	}
+	h2 {
+		@include adjust-font-size-to($h3-font-size);
+	}
 }

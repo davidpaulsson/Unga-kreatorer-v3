@@ -1,15 +1,100 @@
-body {
-	width: 940px;
+html {
+	background-color: #F6F6F6;
+}
+
+#page {	
+	@include breakpoint(papa-bear) {
+		width: 60%;
+	}
+	@include breakpoint(mama-bear) {
+		width: 80%;
+	}
+	@include breakpoint(baby-bear) {
+		padding-top: 40px;
+	}
+
 	margin: 0 auto;
 	padding-top: 100px;
 }
 
-@import "content-sidebar";
+// Main content area
+// -------------------------------------------
 
 #main {
 	margin-top: 60px;
 }
 
-#nav-above {
-	display: none;
+#primary {
+	float: left;
+	margin: 0 -25% 0 0;
+	width: 100%;
+
+	@include breakpoint(baby-bear) {
+		margin: 0;
+	}
+	
+}
+
+#content {
+	margin: 0 25% 0 0;
+	padding-right: 5%;
+	
+	#nav-above {
+		display: none;
+	}
+	
+	@include breakpoint(baby-bear) {
+		margin: 0;
+		padding-right: 0;
+	}
+	
+}
+
+article {
+
+	@include trailer();
+	@include trailing-border();
+	border-color: $grayLighter;
+	
+	.entry-content { 
+		@include leader();
+		@include trailing-border();
+		border-color: $grayLighter;
+		
+	}
+	footer.entry-meta { 
+		@include leader();
+	}
+
+}
+
+// Secondary content area
+// -------------------------------------------
+
+#secondary { /* Sidebar 1 */
+	float: right;
+	overflow: hidden;
+	width: 25%;
+
+	aside.widget {
+		@include trailer(2);
+	}
+	
+	@include breakpoint(baby-bear) {
+		float: none;
+		width: 100%;
+	}
+	
+}
+
+// Footer area
+// -------------------------------------------
+
+#colophon {
+	clear: both;
+	width: 100%;
+	@include leading-border();
+	border-color: $grayLighter;
+	@include leader(2);
+	@include trailer(2);
 }

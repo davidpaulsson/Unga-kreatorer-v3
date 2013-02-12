@@ -1,0 +1,16 @@
+$base-font-size:		14px;
+$base-line-height: 		22px;
+
+$small-font-size:		12px;
+
+$h1-font-size:			24px;
+$h2-font-size:			20px;
+$h3-font-size:			16px;
+
+$gray:					#414141;
+$grayDark:				darken($gray, 20%);
+$grayLight:				lighten($gray, 20%);
+$grayLighter:			lighten($gray, 40%);
+$yellow:				#f9ff65;
+
+$blueprint-border-color:$grayLight;
