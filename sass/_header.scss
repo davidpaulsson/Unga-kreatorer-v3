@@ -18,6 +18,8 @@ h2.site-description {
 	margin-right: 20%;
 	@media all and (-webkit-min-device-pixel-ratio : 1.5) {
 		background-image: url(../img/desc@2x.png);
+		width: 120px;
+		height: 120px;
 	}
 	
 	@include breakpoint(baby-bear) {
